@@ -30,7 +30,6 @@ func (t *NpmBinaryReleaser) Version() string {
 }
 
 func (t *NpmBinaryReleaser) Success(releaseConfig *hooks.SuccessHookConfig) error {
-
 	var cfg config.Config
 	if configData, err := os.ReadFile(".npm-binary-releaser.yaml"); err == nil {
 		t.Logger.Println("reading config from .npm-binary-releaser.yaml")
@@ -48,8 +47,8 @@ func (t *NpmBinaryReleaser) Success(releaseConfig *hooks.SuccessHookConfig) erro
 	if cfg.Homepage == "" {
 		cfg.Homepage = envInfo.Homepage
 	}
-	if cfg.PackageName == "" {
-		cfg.PackageName = envInfo.PackageName
+	if cfg.BinName == "" {
+		cfg.BinName = envInfo.PackageName
 	}
 	if cfg.InputBinDirPath == "" {
 		cfg.TryDefaultInputPaths = true
