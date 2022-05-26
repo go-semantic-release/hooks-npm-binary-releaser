@@ -16,7 +16,7 @@ func main() {
 		Hooks: func() hooks.Hooks {
 			return &hooksReleaser.NpmBinaryReleaser{
 				PluginVersion: VERSION,
-				Logger:        log.New(os.Stdout, "", 0),
+				Logger:        log.New(os.Stderr, "", 0),
 			}
 		},
 	})
