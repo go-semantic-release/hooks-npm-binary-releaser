@@ -32,7 +32,7 @@ jobs:
       - uses: actions/setup-go@v3
         with:
           go-version: 1.18
-      - run: go build ./cmd/hooks-npm-binary-releaser/
+      - run: ./scripts/build-local.sh
       - uses: go-semantic-release/action@v1
         with:
           hooks: goreleaser,npm-binary-releaser
