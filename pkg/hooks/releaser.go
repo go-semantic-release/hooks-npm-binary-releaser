@@ -55,10 +55,10 @@ func (t *NpmBinaryReleaser) Success(releaseConfig *hooks.SuccessHookConfig) erro
 		cfg.TryDefaultInputPaths = true
 	}
 	if cfg.OutputDirPath == "" {
-		cfg.OutputDirPath = "./generated-packages"
+		cfg.OutputDirPath = config.DefaultOutputDirPath
 	}
 	if cfg.PublishRegistry == "" {
-		cfg.PublishRegistry = "https://registry.npmjs.org/"
+		cfg.PublishRegistry = config.DefaultPublishRegistry
 	}
 	cfg.PackageVersion = releaseConfig.NewRelease.Version
 
