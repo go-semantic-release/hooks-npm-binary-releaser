@@ -32,8 +32,9 @@ jobs:
       - uses: actions/setup-go@v3
         with:
           go-version: 1.18
+      - run: go build ./cmd/hooks-npm-binary-releaser/
       - uses: go-semantic-release/action@v1
         with:
-          hooks: goreleaser
+          hooks: goreleaser,npm-binary-releaser
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
