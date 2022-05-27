@@ -3,7 +3,7 @@ module github.com/go-semantic-release/hooks-npm-binary-releaser
 go 1.18
 
 require (
-	github.com/christophwitzko/npm-binary-releaser v1.10.0
+	github.com/christophwitzko/npm-binary-releaser v1.10.1
 	github.com/go-semantic-release/semantic-release/v2 v2.22.4
 	gopkg.in/yaml.v3 v3.0.0
 )

@@ -48,7 +48,7 @@ func (t *NpmBinaryReleaser) Success(releaseConfig *hooks.SuccessHookConfig) erro
 		cfg.Homepage = envInfo.Homepage
 	}
 	if cfg.BinName == "" {
-		cfg.BinName = envInfo.PackageName
+		cfg.BinName = envInfo.Name
 	}
 	if cfg.InputBinDirPath == "" {
 		cfg.TryDefaultInputPaths = true

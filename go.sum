@@ -43,8 +43,8 @@ github.com/Masterminds/semver/v3 v3.1.1/go.mod h1:VPu/7SZ7ePZ3QOrcuXROw5FAcLl4a0
 github.com/antihax/optional v1.0.0/go.mod h1:uupD/76wgC+ih3iEmQUL+0Ugr19nfwCT1kdvxnR2qWY=
 github.com/census-instrumentation/opencensus-proto v0.2.1/go.mod h1:f6KPmirojxKA12rnyqOA5BBL4O983OfeGPqjHWSTneU=
 github.com/cespare/xxhash/v2 v2.1.1/go.mod h1:VGX0DQ3Q6kWi7AoAeZDth3/j3BFtOZR5XLFGgcrjCOs=
-github.com/christophwitzko/npm-binary-releaser v1.10.0 h1:Yzl2AymNUoC4iybjoQakutsOdrH5ra0Uhng+YQVCtPU=
-github.com/christophwitzko/npm-binary-releaser v1.10.0/go.mod h1:Uh+uQtFF2fosUYA3N5jXR0GQUH5F26MBoF2fDvJUyFc=
+github.com/christophwitzko/npm-binary-releaser v1.10.1 h1:10yYROu00Ow30Ip3elhAufV3tlZaIZkjNVqYqxKXq90=
+github.com/christophwitzko/npm-binary-releaser v1.10.1/go.mod h1:Uh+uQtFF2fosUYA3N5jXR0GQUH5F26MBoF2fDvJUyFc=
 github.com/chzyer/logex v1.1.10/go.mod h1:+Ywpsq7O8HXn0nuIou7OrIPyXbp3wmkHB+jjWRnGsAI=
 github.com/chzyer/readline v0.0.0-20180603132655-2972be24d48e/go.mod h1:nSuG5e5PlCu98SY8svDHJxuZscDgtXS6KTTbou5AhLI=
 github.com/chzyer/test v0.0.0-20180213035817-a1ea475d72b1/go.mod h1:Q3SI9o4m/ZMnBNeIyt5eFwwo7qiLfzFZmjNmxjkiQlU=
