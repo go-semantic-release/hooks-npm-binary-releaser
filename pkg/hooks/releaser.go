@@ -33,8 +33,8 @@ func (t *NpmBinaryReleaser) Success(releaseConfig *hooks.SuccessHookConfig) erro
 	var cfg config.Config
 	if configData, err := os.ReadFile(".npm-binary-releaser.yaml"); err == nil {
 		t.Logger.Println("reading config from .npm-binary-releaser.yaml")
-		if err := yaml.Unmarshal(configData, &cfg); err != nil {
-			return fmt.Errorf("could not read config: %w", err)
+		if yamlErr := yaml.Unmarshal(configData, &cfg); yamlErr != nil {
+			return fmt.Errorf("could not read config: %w", yamlErr)
 		}
 	} else if !errors.Is(err, os.ErrNotExist) {
 		return err
